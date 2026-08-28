@@ -1,0 +1,40 @@
+<div style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #243b53; line-height: 1.5; margin-top: 15px;">
+
+  <div>
+    <span style="font-weight: bold;"><?= nome ?></span>
+    <? if (cargo && cargo.trim() !== "") { ?>
+      <span style="color: #666666;">| <?= cargo ?></span>
+    <? } ?>
+  </div>
+
+  <div style="margin-top: 8px;">
+    Empresa Exemplo
+  </div>
+
+  <div style="margin-top: 8px;">
+    <?= departamento ?> | <?= enderecoLinha1 ?><br>
+    <?= enderecoLinha2 ?>
+  </div>
+
+  <div style="margin-top: 8px;">
+    <? if (telefoneFixo && telefoneFixo.trim() !== "") { ?>
+      <span style="font-weight: bold;">T</span> <?= telefoneFixo ?>
+    <? } ?>
+
+    <? if (celular && celular.trim() !== "") { ?>
+      <? if (telefoneFixo && telefoneFixo.trim() !== "") { ?>
+        <span style="color: #666666;">|</span>
+      <? } ?>
+      <span style="font-weight: bold;">M</span> <?= celular ?>
+    <? } ?>
+  </div>
+
+  <div style="margin-top: 4px;">
+    <a href="https://www.example.com" style="color: #243b53; text-decoration: underline;">www.example.com</a>
+  </div>
+
+  <div style="margin-top: 12px; color: #666666; font-size: 11px;">
+    Assinatura corporativa demonstrativa
+  </div>
+
+</div>
